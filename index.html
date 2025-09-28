@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>TalentFlow</title>
+</head>
+<body>
+
+  <!-- Header (Nav + Hero) -->
+  <header class="hero-section">
+    <nav>
+      <div class="logo">
+        <p>TalentFlow</p>
+      </div>
+      <ul class="sidebar">
+        <li class="x-btn" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Candidate</a></li>
+        <li><a href="#">Employers</a></li>
+        <li><a href="#">Pages</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Jobs</a></li>
+        <li class="hideOnMobile"><a href="#">Candidate</a></li>
+        <li class="hideOnMobile"><a href="#">Employers</a></li>
+        <li class="hideOnMobile"><a href="#">Pages</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+      <div class="login">
+        <a href="#" id="login-btn">Login</a>
+        <a href="#" id="btn">Add Job</a>
+      </div>
+    </nav>
+
+    <div class="hero-container">
+      <div class="hero-first">
+        <div class="hero-text">
+          <h1>Find your <span class="perfect">perfect</span> job match</h1>
+          <p>Find jobs, Employment & Career Opportunities</p>
+
+          <form class="search-box">
+            <input type="text" placeholder="Job title, Keywords...">
+            <input type="text" placeholder="Location">
+            <button type="submit">Find Jobs</button>
+          </form>
+
+          <p>Popular Searches: Designer, Web, IOS, PHP, Senior, Engineer</p>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="image.jpg" alt="Image">
+
+        <!-- Floating icons -->
+        <div class="icon icon1"><img src="logos/icrc.png" alt="Amazon"></div>
+        <div class="icon icon2"><img src="logos/fao.png" alt="WordPress"></div>
+        <div class="icon icon3"><img src="logos/irc.png" alt="Behance"></div>
+        <div class="icon icon4"><img src="logos/undp.png" alt="Twitter"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2>Browse by category</h2>
+    <p>Find the job that's perfect for you. about 800+ new jobs everyday</p>
+
+    <div class="categories-grid">
+      <div class="category-card">
+        <img src="Icons/credit-card (1).png" alt="credit-card">
+        <h3>Retail & Product</h3>
+        <p>3 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/idea.png" alt="Idea">
+        <h3>Software</h3>
+        <p>8 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/copy-writing.png" alt="copy-writing">
+        <h3>Content Writer</h3>
+        <p>6 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/hand.png" alt="hand">
+        <h3>Finance</h3>
+        <p>4 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/user.png" alt="user">
+        <h3>Human Resouces</h3>
+        <p>8 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/aggregate.png" alt="aggregate">
+        <h3>Management</h3>
+        <p>16 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/graph.png" alt="graph">
+        <h3>Market Research</h3>
+        <p>9 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/megaphone.png" alt="megaphone">
+        <h3>Marketing & Sales</h3>
+        <p>5 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/software-application.png" alt="software-application">
+        <h3>Information Technology</h3>
+        <p>7 jobs available</p>
+      </div>
+      <div class="category-card">
+        <img src="Icons/cyber-security.png" alt="cyber-security">
+        <h3>Cyber Security</h3>
+        <p>3 jobs available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section class="jobs-section">
+    <p class="jobs-intro">200 New Jobs</p>
+    <h2 class="jobs-heading">New & Random <span class="perfect">Jobs</span></h2>
+
+    <div class="jobs-grid">
+
+      <!-- Job Card 1 -->
+      <div class="job-card">
+        <div class="job-labels">
+          <span class="featured">Featured</span>
+          <span class="type part-time">Part Time</span>
+        </div>
+        <div class="job-logo">
+          <img src="company-logos/company-1.jpg" alt="logo">
+        </div>
+        <h3>Developers Full Stack</h3>
+        <p class="company-name">Oscar Wilde</p>
+        <div class="job-tags">
+          <span>App Work</span>
+          <span>CSS3</span>
+          <span>PHP</span>
+          <span class="more">+1</span>
+        </div>
+        <div class="job-location">📍 30th Ave, Long Island, NY</div>
+        <a href="#" class="browse-job">Browse Job »</a>
+      </div>
+
+      <!-- Job Card 2 -->
+      <div class="job-card">
+        <div class="job-labels">
+          <span class="urgent">Urgent</span>
+          <span class="type internship">Internship</span>
+        </div>
+        <div class="job-logo">
+          <img src="company-logos/company-2.jpg" alt="logo">
+        </div>
+        <h3>Python 3 Bootcamp</h3>
+        <p class="company-name">Skype</p>
+        <div class="job-tags">
+          <span>Digital</span>
+          <span>Interviews</span>
+          <span>Jobs</span>
+          <span class="more">+1</span>
+        </div>
+        <div class="job-location">📍 1628 2nd Ave, New York</div>
+        <a href="#" class="browse-job">Browse Job »</a>
+      </div>
+
+      <!-- Job Card 3 -->
+      <div class="job-card">
+        <div class="job-labels">
+          <span class="featured">Featured</span>
+          <span class="type part-time">Part Time</span>
+        </div>
+        <div class="job-logo">
+          <img src="company-logos/company-3.jpg" alt="logo">
+        </div>
+        <h3>Digital Sketching</h3>
+        <p class="company-name">Employer</p>
+        <div class="job-tags">
+          <span>Marketing</span>
+          <span>Retail</span>
+          <span>Skills</span>
+        </div>
+        <div class="job-location">📍 10th St Long Island, NY</div>
+        <a href="#" class="browse-job">Browse Job »</a>
+      </div>
+
+      <!-- Job Card 4 -->
+      <div class="job-card">
+        <div class="job-labels">
+          <span class="featured">Featured</span>
+          <span class="type full-time">Full Time</span>
+        </div>
+        <div class="job-logo">
+          <img src="company-logos/company-4.jpg" alt="logo">
+        </div>
+        <h3>Marketing & Fans Page</h3>
+        <p class="company-name">Employer</p>
+        <div class="job-tags">
+          <span>Face</span>
+          <span>Fans</span>
+          <span>Likes</span>
+          <span class="more">+1</span>
+        </div>
+        <div class="job-location">📍 30th Ave, Long Island, NY</div>
+        <a href="#" class="browse-job">Browse Job »</a>
+      </div>
+
+      <!-- Job Card 5 -->
+      <div class="job-card">
+        <div class="job-labels">
+          <span class="urgent">Urgent</span>
+          <span class="type freelance">Freelance</span>
+        </div>
+        <div class="job-logo">
+          <img src="company-logos/company-5.jpg" alt="logo">
+        </div>
+        <h3>Digital Masterclass</h3>
+        <p class="company-name">Cadillac</p>
+        <div class="job-tags">
+          <span>Interviews</span>
+          <span>Jobs</span>
+        </div>
+        <div class="job-location">📍 1628 2nd Ave, New York</div>
+        <a href="#" class="browse-job">Browse Job »</a>
+      </div>
+
+      <!-- Job Card 6 -->
+      <div class="job-card">
+        <div class="job-labels">
+          <span class="type part-time">Part Time</span>
+        </div>
+        <div class="job-logo">
+          <img src="company-logos/company-3.jpg" alt="logo">
+        </div>
+        <h3>UI/UX App Designer</h3>
+        <p class="company-name">Telegram</p>
+        <div class="job-tags">
+          <span>After Effect</span>
+          <span>Apps</span>
+          <span>Design</span>
+        </div>
+        <div class="job-location">📍 10th St Long Island, NY</div>
+        <a href="#" class="browse-job">Browse Job »</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Branding -->
+      <div class="footer-brand">
+        <h2>TalentFlow</h2>
+        <p>Find your dream job or the perfect candidate.</p>
+        <p class="copyright">© 2025 TalentFlow. All rights reserved.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse Jobs</a></li>
+          <li><a href="#">Post a Job</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: joshansanjar@gmail.com</p>
+        <p>Phone: +93782720829</p>
+        <div class="social-icons">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Facebook</a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Get job alerts and updates.</p>
+        <form>
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
